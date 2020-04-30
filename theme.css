@@ -17,6 +17,11 @@ border-radius: 1rem;
 grid-column-end: span 2;
 }
 
+.disclaimer {
+    font-size: small;
+    text-align: center;
+}
+
 body {
     margin: auto;
     text-align: center;
@@ -33,8 +38,12 @@ h3 {
 }
 
 figcaption {
-    font-size: 40px;
+    font-size: 3rem;
     text-align: center;
+}
+
+.side {
+  font-size: 1rem;
 }
 
 /* unvisited link */
@@ -87,6 +96,5 @@ div .bigproj {
   height: 600px;
   
 }
-
 
 }
