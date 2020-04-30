@@ -1,21 +1,20 @@
-@media only screen and (max-width: 768px) {
-    body {
-        margin: 0 50px 0 50px;
-    }
-    
-    h1 {
-        font-size: 90px;
-        margin: 30px 0 0 0;
-    }
-    
-    figcaption {
-        font-size: 14px;
-        text-align: center;
-    }
-}
-
 body {
         font-family: 'Oswald';
+  }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 1rem;
+  }
+.grid > div {
+    background: #EDE7F6;
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+  
+.bigproj {
+    grid-row-end: span 2;
   }
 
 /* unvisited link */
@@ -41,3 +40,19 @@ a:active {
     color: rgb(0, 0, 0);
     text-decoration: none;
   }
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0 50px 0 50px;
+    }
+    
+    h1 {
+        font-size: 90px;
+        margin: 30px 0 0 0;
+    }
+    
+    figcaption {
+        font-size: 14px;
+        text-align: center;
+    }
+}
