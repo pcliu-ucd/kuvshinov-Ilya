@@ -13,39 +13,6 @@ padding: 1.5rem;
 border-radius: 1rem;
 }
 
-.bigproj {
-grid-column-end: span 2;
-}
-
-.disclaimer {
-    font-size: small;
-    text-align: center;
-}
-
-body {
-    margin: auto;
-    text-align: center;
-}
-
-h1 {
-    font-size: 120px;
-    text-align: center;
-    margin: 30px 0 0 100px;
-}
-
-h3 {
-    margin: 10px 0 0 100px;
-}
-
-figcaption {
-    font-size: 3rem;
-    text-align: center;
-}
-
-.side {
-  font-size: 1rem;
-}
-
 /* unvisited link */
 a:link {
 color: rgb(0, 0, 0);
@@ -80,8 +47,32 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
 
 
 
-div .img {
-  margin: auto auto auto auto;
+body {
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 120px;
+    text-align: center;
+    margin: 30px 0 0 100px;
+}
+
+h3 {
+    margin: 10px 0 0 100px;
+}
+
+figcaption {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.bigproj {
+grid-column-end: span 2;
+}
+
+.bigproj, .smallproj {
+  margin: auto;
 }
 
 div .bigproj {
@@ -94,7 +85,16 @@ div .bigproj {
 
 .small {
   height: 600px;
-  
+}
+
+.side {
+  font-size: 1rem;
+}
+
+.disclaimer {
+    font-size: small;
+    text-align: center;
+    margin: 0 0 0 130px;
 }
 
 }
