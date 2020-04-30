@@ -1,58 +1,75 @@
 body {
-        font-family: 'Oswald';
-  }
+    font-family: 'Oswald';
+}
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-gap: 1rem;
-  }
-.grid > div {
-    background: #EDE7F6;
-    padding: 1.5rem;
-    border-radius: 1rem;
-  }
-  
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 1rem;
+}
+.grid div {
+background: #EDE7F6;
+padding: 1.5rem;
+border-radius: 1rem;
+}
+
 .bigproj {
-    grid-row-end: span 2;
-  }
+grid-column-end: span 2;
+}
+
 
 /* unvisited link */
 a:link {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-  }
-  
+color: rgb(0, 0, 0);
+text-decoration: none;
+}
+
 /* visited link */
 a:visited {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-  }
-  
+color: rgb(0, 0, 0);
+text-decoration: none;
+}
+
 /* mouse over link */
 a:hover {
-    color: rgb(89, 0, 255);
-    text-decoration: none;
-  }
-  
+color: rgb(89, 0, 255);
+text-decoration: none;
+}
+
 /* selected link */
 a:active {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-  }
+color: rgb(0, 0, 0);
+text-decoration: none;
+}
 
-@media only screen and (max-width: 768px) {
-    body {
-        margin: 0 50px 0 50px;
-    }
-    
-    h1 {
-        font-size: 90px;
-        margin: 30px 0 0 0;
-    }
-    
-    figcaption {
-        font-size: 14px;
-        text-align: center;
-    }
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (                min-resolution: 192dpi) and (min-width: 320px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 320px) { 
+body {
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 30px;
+    text-align: center;
+}
+
+div .img {
+  margin: auto auto auto auto;
+}
+
+div .bigproj {
+  width: 800px;
+  height: 1200px;
+}
 }
