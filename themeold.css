@@ -1,0 +1,104 @@
+body {
+    font-family: 'Oswald';
+}
+
+.grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 1rem;
+}
+.grid div {
+background: #EDE7F6;
+padding: 1.5rem;
+border-radius: 1rem;
+}
+
+/* unvisited link */
+a:link {
+color: rgb(0, 0, 0);
+text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+color: rgb(0, 0, 0);
+text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+color: rgb(89, 0, 255);
+text-decoration: none;
+}
+
+/* selected link */
+a:active {
+color: rgb(0, 0, 0);
+text-decoration: none;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (                min-resolution: 192dpi) and (min-width: 320px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 320px),
+only screen and (max-width: 1200px)
+
+{
+
+
+
+body {
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 120px;
+    text-align: center;
+    margin: 30px 0 0 100px;
+}
+
+h3 {
+    margin: 10px 0 0 100px;
+}
+
+figcaption {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.bigproj {
+grid-column-end: span 2;
+}
+
+.bigproj, .smallproj {
+  margin: auto;
+}
+
+div .bigproj {
+  width: 1000px;
+}
+
+.big {
+  width: 900px
+}
+
+.small {
+    height: 600px;
+    width: auto;
+}
+
+.side {
+  font-size: 1rem;
+}
+
+.disclaimer {
+    font-size: small;
+    text-align: center;
+    margin: 0 0 0 130px;
+}
+
+}
